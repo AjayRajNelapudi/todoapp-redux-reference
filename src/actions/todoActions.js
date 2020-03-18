@@ -4,14 +4,14 @@ import { FETCH_TASKS, ADD_TASK, TOGGLE_TASK, REMOVE_TASK } from './types';
 export const fetchTasks = () => dispatch => {
     dispatch({
         type: FETCH_TASKS
-    })
+    });
 }
 
 export const addTask = (task) => dispatch => {
     dispatch({
         type: ADD_TASK,
         payload: task
-    })
+    });
 }
 
 export const toggleTask = (taskName) => dispatch => {

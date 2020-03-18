@@ -3,8 +3,8 @@ import { act } from 'react-dom/test-utils';
 
 const initState = {
     tasks: [
-        {name: 'Learn React', completed: true},
-        {name: 'Learn Redux', completed: false}
+        // {name: 'Learn React', completed: true},
+        // {name: 'Learn Redux', completed: false}
     ],
     task: {}
 };

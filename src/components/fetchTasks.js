@@ -3,11 +3,15 @@ import { connect } from 'react-redux';
 import { fetchTasks, toggleTask, removeTask } from '../actions/todoActions';
 
 class FetchTasks extends React.Component {
-    componentWillMount() {
-        this.props.fetchTasks();
+    constructor(props) {
+        super(props);
 
         this.toggleTask = this.toggleTask.bind(this);
         this.removeTask = this.removeTask.bind(this);
+    }
+
+    componentWillMount() {
+        this.props.fetchTasks();
     }
 
     // componentWillReceiveProps(props) {
